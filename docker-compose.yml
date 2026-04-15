@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: 8080
+      RATE_CAPACITY: 10
+      RATE_REFILL: 5
